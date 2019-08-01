@@ -1,0 +1,38 @@
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Moni pierwsza aplikacja w Springu</title>
+		<link rel="stylesheet" href="./page.css" type="text/css" media="screen"></link>
+	</head>
+	
+	<body>
+	<div id="container">
+		<div id="header">
+			<h1><a th:href="@{/}">Cognifide Task - Twitter Reader</a></h1>
+		</div>
+		
+	<div id="content">
+		
+			<div id="form">
+				<form th:action="@{/}"  method="get">
+					<div class="form_left">
+						<h4>Choose timeline:</h4>
+						<select name="friend" style="width: 300px">
+  							<option th:each="friend:${friends}"
+  									th:value="${friend.name}"
+  									th:text="${friend.name}" >Friend</option>				
+						</select>
+					</div>
+					<div class="form_right">
+						<h4>Filter by words (space-separated):</h4>
+						<p><input class="input" type="text" name="filter" maxlength="40" th:value="${gender}" /> </p>
+					</div>
+					<div class="form_button">
+						<p><input type="submit" style="width: 150px" value="Reload"/></p>
+					</div>
+				</form>
+			</div>
+
+		</div>
+	</div>	
+	</body>
+</html>

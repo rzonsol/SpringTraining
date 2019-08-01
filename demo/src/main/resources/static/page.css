@@ -1,0 +1,186 @@
+body {
+	font-family: "lucida grande", lucida, tahoma, helvetica, arial, sans-serif !important;
+}
+
+#header {
+	margin: 0 auto;
+	padding:20px;
+	width: 100%;
+	height: 92px;
+	position: relative;
+	display: block;
+	background-color: #bbbbbb;
+	text-align: center;
+	vertical-align: middle;
+}
+
+#header h1 a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+#container {
+	width: 100%;	
+}
+
+#content {
+	margin: 20px auto 20px;
+	max-width: 800px
+}
+
+a {
+	color: #006600;
+}
+
+.form_left {
+	display: inline-block;
+	width: 440px;
+	height: 100px;
+}
+
+.form_right {
+	display: inline-block;
+	width: 350px;
+	height: 100px;
+}
+
+.input {
+	width: 300px;
+}
+
+.form_button {
+	margin: 10px auto 10px;
+	width: 200px;
+	height: 50px;
+}
+
+ul.menu li {
+	list-style: none;
+	font-size: 10pt;
+}
+
+div.feed {
+	width: 800px;
+}
+
+ul.imagedList li {
+	padding-top:10px;
+	padding-bottom:10px;
+	list-style: none;
+	border-top: 1px dotted lightgrey;
+}
+
+ul.imagedlist li:first-child {
+	border-top: none;
+}
+
+li.imagedItem div.image {
+	float: left;
+}
+
+li.imagedItem div.content {
+	font-size: 11pt;
+	margin-left: 70px;
+}
+
+li.imagedItem div.content a {
+	text-decoration: none;
+}
+
+li.imagedItem div.content a:hover {
+	text-decoration: underline;
+}
+
+span.postTime {
+	font-size: 8pt;
+	color: #999999;
+}
+
+span.dmRecipient {
+	font-size: 8pt;
+	color: #999999;
+}
+
+ul.friends li {
+	padding-top:5px;
+	padding-bottom:5px;
+	list-style:none;
+}
+
+ul.timelineChoices {
+	padding: 0px;
+	margin: 0px;
+}
+
+ul.choices li {
+	list-style:none;
+	display:inline;
+	font-size:10pt;
+	padding-left: 5px;
+	border-left: 1px solid #000;
+}
+
+ul.choices li:first-child {
+	padding-left: 0px;
+	border-left: none;
+}
+
+div.accountConnection {
+	margin: 10px;
+	width: 600px;
+	background-color: #ffffff;
+	border: 1px solid #006600;
+}
+
+div.accountConnection h4 {
+	margin-top: 0;
+	background-color: #efefef;
+}
+
+div.accountConnection h4 img {
+	vertical-align: middle;
+}
+
+
+
+
+
+div.info,div.success,div.warning,div.error {
+	border: 1px solid;
+	margin: 10px 0px;
+	padding: 15px 10px 15px 50px;
+	background-repeat: no-repeat;
+	background-position: 10px center;
+}
+
+div.info {
+	color: #00529B;
+	background-color: #BDE5F8;
+	background-image: url('info.png');
+}
+
+div.success {
+	color: #4F8A10;
+	background-color: #DFF2BF;
+	background-image: url('success.png');
+}
+
+div.warning {
+	color: #9F6000;
+	background-color: #FEEFB3;
+	background-image: url('warning.png');
+}
+
+div.error {
+	color: #D8000C;
+	background-color: #FFBABA;
+	background-image: url('error.png');
+}
+
+span.success {
+	color: #4F8A10;
+}
+
+span.error {
+	color: #D8000C;
+}
