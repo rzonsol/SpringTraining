@@ -6,8 +6,29 @@
 </head>
 <body>
 <h1>Result</h1>
-<p th:text="'id: ' + ${greeting.id}" />
-<p th:text="'content: ' + ${greeting.content}" />
+<p th:text="'id: ' + ${user.id}" />
+<p th:text="'content: ' + ${user.name}" />
 <a href="/greeting">Submit another message</a>
+
+<hr/>
+<h2>All user</h2>
+
+<table>
+    <thead>
+    <tr>
+        <th> Id </th>
+        <th> Name </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:if="${users.empty}">
+        <td colspan="2"> No users </td>
+    </tr>
+    <tr th:each="u : ${users}">
+        <td><span th:text="${u.id}"> Id </span></td>
+        <td><span th:text="${u.name}"> name </span></td>
+    </tr>
+    </tbody>
+</table>
 </body>
 </html>

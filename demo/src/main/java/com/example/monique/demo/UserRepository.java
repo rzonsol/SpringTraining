@@ -11,6 +11,8 @@ public interface UserRepository extends CrudRepository<User, Long> {
 
     User findById(@Param("id") Long id);
 
+    List<User> findAll();
+
     List<User> findByAge(@Param("age") Integer age);
 
     List<User> findByAgeLessThan(@Param("age") Integer age);
